@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YalaPay - Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/dark-mode.js"></script>
+</head>
+
+<body>
+<header>
+</header>
+
+<div class="login-screen">
+    <button id="dark-mode-button"><i class="fa fa-sun-o"></i></button>
+
+    <div class="login-box">
+        <h2 class="yalapay-tag">YalaPay</h2>
+        <form action="#">
+            <h3>Log Into <span class="yalapay-login">YalaPay</span></h3>
+            <input type="email" id="email" placeholder=" Email">
+            <div id="error-email" class="error"></div>
+            <br>
+            <input type="password" id="password" placeholder=" Password">
+            <div id="error-password" class="error"></div>
+            <br>
+            <button id="loginBtn">Log in</button>
+        </form>
+
+    </div>
+
+    <div class="login-header">
+        <div class="desc">
+            <h3>Simple, Fast, Safe.</h3>
+            <h3>Trusted by more than 20M Customers Worldwide.</h3>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script type="module" src='./js/index.js'></script>
+</body>
+
+</html>

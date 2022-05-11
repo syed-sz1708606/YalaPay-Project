@@ -1,0 +1,39 @@
+<div class="input-group">
+    <span class="error" data-error="">
+        <label for="pay-cheque-no">Cheque ID</label> <br>
+        <input id="pay-cheque-no" type="text" min="0">
+    </span>
+
+    <span class="error" data-error="">
+        <label for="pay-cheque-drawer">Drawer</label> <br>
+        <input id="pay-cheque-drawer" type="text">
+    </span>
+</div>
+<div class="input-group">
+    <span class="error" data-error="">
+        <label for="pay-bank-select">Select Bank</label> <br>
+        <select name="pay-bank-select" id="pay-bank-select"></select>
+    </span>
+
+    <span class="error" data-error="">
+        <label for="pay-cheque-status">Status</label> <br>
+        <input disabled id="pay-cheque-status" type="text" name="pay-cheque-status">
+    </span>
+</div>
+<div class="input-group">
+    <span>
+        <label for="pay-cheque-issueDate">Received Date</label> <br>
+        <input disabled id="pay-cheque-issueDate" type="Date" name="pay-cheque-issueDate">
+    </span>
+
+    <span class="error" data-error="">
+        <label for="pay-cheque-dueDate">Due Date</label> <br>
+        <input id="pay-cheque-dueDate" type="Date" name="pay-cheque-dueDate">
+    </span>
+</div> <br>
+<span class="error" data-error="">
+    <label for="pay-cheque-imgUrl">Image Url</label> <br>
+    <input required id="pay-cheque-imgUrl" type="file" accept="image/*" name="filename">
+</span>
+
+<img src="#" id="cheque-img" alt="Cheque image">

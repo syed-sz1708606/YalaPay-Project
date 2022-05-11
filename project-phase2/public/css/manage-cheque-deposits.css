@@ -1,0 +1,21 @@
+@import url(./common.css);
+
+.add-deposit-cheque-list {
+    margin: 1rem 0;
+}
+
+.deposit-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+.view-deposit-cheques {
+    margin-top: 1rem;
+}
+
+table input[type="date"], table select {
+    height: 2rem;
+    width: 170px
+}

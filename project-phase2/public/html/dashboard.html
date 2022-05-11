@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="../js/dark-mode.js"></script>
+</head>
+
+<body>
+
+    <div class="top">
+        <h1 class="yalapay-logo">YalaPay</h1>
+        <button id="dark-mode-button"><i class="fa fa-sun-o"></i></button>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="./dashboard.html" id="nav-current-page">Dashboard</a></li>
+            <li><a href="./manage-customers.html">Customers</a></li>
+            <li><a href="./manage-invoices.html">Invoices</a></li>
+            <li><a href="./manage-cheque-deposits.html">Cheque Deposits</a></li>
+            <li><a href="./reports.html">Reports</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+    <div>
+
+        <div class="dashboard-container">
+            <div id="Invoices" class="stats">
+                <h3>Invoices</h3>
+
+                <span class="common-stats">
+                    <label id="total">Total:</label>
+                    <br>
+                    <label id="due30Days">Due within 30 days:</label>
+                    <br>
+                    <label id="due30MoreDays">Due in more than 30 days:</label>
+                </span>
+
+                <div class="invoice-reports">
+                    <a class="report-link" href="./reports.html?type=invoice">
+                        <button>
+                            Invoice Reports
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="Cheque" class="stats">
+
+                <h3>Cheques</h3>
+
+                <span class="common-stats">
+                    <label id="Awaiting">Awaiting:</label>
+                    <br>
+                    <label id="deposited">Deposited:</label>
+                    <br>
+                    <label id="cashed">Cashed:</label>
+                    <br>
+                    <label id="returned">Returned:</label>
+                </span>
+
+                <div class="cheque-details">
+                    <a class="report-link" href="./reports.html?type=cheque">
+                        <button>
+                            Cheque Report
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="updates-container">
+            <div class="dashboard-updates-section">
+
+                <div class="latest-updates">
+                    <h3>Recent Customers</h3>
+                    <div id="latest-customers">
+                    </div>
+                </div>
+
+                <div class="latest-updates">
+                    <h3>Recent Payments</h3>
+
+                    <div id="latest-payments">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+    <script type="module" src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

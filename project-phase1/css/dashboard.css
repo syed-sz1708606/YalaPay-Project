@@ -1,0 +1,107 @@
+@import url(./common.css);
+
+
+header {
+    margin-top: 4%;
+    text-align: center;
+}
+
+nav ul {
+    padding-bottom: 0rem;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1.5em;
+}
+h2{
+    margin-bottom: 5%;
+}
+
+.dashboard-container {
+    display: flex;
+    border-radius: 10px;
+    padding: 2%;
+    row-gap: 1rem;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin: auto;
+    flex-direction: column;
+}
+
+.stats {
+    padding: 1.5%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.common-stats {
+    width: 100%;
+}
+.dashboard-updates-section{
+    display: flex;
+    flex-direction: column;
+}
+table{
+    margin: 1rem 0;
+
+}
+
+th{
+    width: 20%;
+    display: revert;
+}
+td{
+    display: revert;
+}
+
+td:before {
+    display: none;
+}
+.updates-container{
+    border-radius: 10px;
+    padding: 5%;
+    margin: 1rem auto auto auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.latest-updates{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width: 600px) {
+    .updates-container{
+        width: 70%;
+        padding: 1rem;
+    }
+    .stats {
+        width: 100%;
+        padding: 1rem;
+        justify-content: space-between;
+    }
+
+    .dashboard-container {
+        gap: 3%;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+    h3 {
+        margin-top: 0;
+    }
+    header{
+        margin-top: 0;
+    }
+    .dashboard-updates-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .latest-updates{
+        width: 100%;
+    }
+}

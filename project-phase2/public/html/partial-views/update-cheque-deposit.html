@@ -1,0 +1,26 @@
+<form id="update-cheque-deposit-form" class="add-form">
+
+    <h3 class="page-subheading">Update Cheque Deposit</h3>
+
+    <input id="deposit-id" type="text" hidden readonly />
+
+    <span>
+        <label for="bank-account-no">Bank Account: </label> <br>
+        <input type="text" name="bank-account-no" id="bank-account-no" readonly>
+    </span>
+
+    <span>
+        <label for="deposit-status">Deposit Status: </label> <br>
+        <select name="deposit-status" id="deposit-status">
+            <option value="cashed">Cashed</option>
+            <option value="returns">Cashed with Returns</option>
+        </select>
+    </span>
+
+    <span>
+        <label for="cashed-date">Cashed Date: </label> <br>
+        <input type="date" name="cashed-date" id="cashed-date" />
+    </span>
+
+    <button type="submit" id="update-btn">Submit</button>
+</form>

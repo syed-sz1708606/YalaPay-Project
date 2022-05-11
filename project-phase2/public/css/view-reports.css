@@ -1,0 +1,35 @@
+@import url(./common.css);
+
+input[type="radio"] {
+    height: 1rem;
+    width: fit-content;
+}
+
+.report-type-selector {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-form {
+    padding: 0;
+}
+
+.add-form span {
+    margin-top: 0.5rem;
+}
+
+.add-form button {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+}
+
+@media screen and (min-width: 60rem) {
+    .report-type-selector {
+        flex-direction: row;
+    }
+
+    .report-type-selector span {
+        margin-right: 1rem;
+    }
+}

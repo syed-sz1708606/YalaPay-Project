@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Invoices</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/manage-payments.css">
+    <script src="../js/dark-mode.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <h1 class="yalapay-logo">YalaPay</h1>
+        <button id="dark-mode-button"><i class="fa fa-sun-o"></i></button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./manage-customers.html">Customers</a></li>
+            <li><a href="./manage-invoices.html" id="nav-current-page">Invoices</a></li>
+            <li><a href="./manage-cheque-deposits.html">Cheque Deposits</a></li>
+            <li><a href="./reports.html">Reports</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Manage Payments</h1>
+    </header>
+
+    <main>
+        <div class="page-actions">
+            <button id="list-payment">Show All</button>
+            <button id="add-payment">Add</button>
+
+            <div class="search">
+                <input type="text" class="search-input">
+
+                <select name="search-criteria" class="search-criteria">
+                    <option value="byId">By ID</option>
+                    <option value="byAmount">By Amount</option>
+                    <option value="byPaymentDate">By Payment Date</option>
+                    <option value="byPaymentMode">By Payment Mode</option>
+                </select>
+
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+        <h3 class="page-subheading"></h3>
+        <div id="payment-container">
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+    <script type="module" src='../js/manage-payments.js'></script>
+
+</body>
+
+</html>

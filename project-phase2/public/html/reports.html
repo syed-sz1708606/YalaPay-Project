@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>View Reports</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/view-reports.css">
+    <script src="../js/dark-mode.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <h1 class="yalapay-logo">YalaPay</h1>
+        <button id="dark-mode-button"><i class="fa fa-sun-o"></i></button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./manage-customers.html">Customers</a></li>
+            <li><a href="./manage-invoices.html">Invoices</a></li>
+            <li><a href="./manage-cheque-deposits.html">Cheque Deposits</a></li>
+            <li><a href="./reports.html" id="nav-current-page">Reports</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>View Reports</h1>
+    </header>
+
+    <main>
+        <div class="add-form">
+            <div class="report-type-selector">
+                <span>
+                    <input type="radio" name="report-type" id="invoice-radio" value="invoice" checked>
+                    <label for="invoice-radio">Invoice Report</label>
+                </span>
+                <span>
+                    <input type="radio" name="report-type" id="cheque-radio" value="cheque">
+                    <label for="cheque-radio">Cheque Report</label>
+                </span>
+            </div>
+            <div class="input-group">
+                <span>
+                    <label for="from-date">From:</label> <br>
+                    <input type="date" name="fromDate" id="from-date" required>
+                </span>
+                <span>
+                    <label for="to-date">To:</label> <br>
+                    <input type="date" name="toDate" id="to-date" required>
+                </span>
+
+                <span>
+                    <label for="status">Status:</label><br>
+                    <select name="status" id="status"></select>
+                </span>
+            </div>
+            <button type="submit" id="view-report-btn">View Report</button>
+        </div>
+
+        <div class="main-content">
+            <div class="report"></div>
+            <div class="summary">
+                <label id="report-count"></label> <br>
+                <label id="report-total"></label>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+    <script type="module" src='../js/reports.js'></script>
+</body>
+
+</html>

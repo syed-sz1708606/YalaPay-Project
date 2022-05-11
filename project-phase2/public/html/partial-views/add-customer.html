@@ -1,0 +1,51 @@
+<form class="add-form" id="add-customer-form">
+    <h3 class="page-subheading">Add Customer</h3>
+    <input name="customerId" id="customerId" readonly="readonly" hidden="true">
+
+    <span class="error" data-error="">
+        <label for="companyName">Company Name</label> <br>
+        <input type="text" name="companyName" id="companyName" class="space" />
+    </span>
+
+    <div class="input-group">
+        <span class="error" data-error="">
+            <label for="firstName">First Name</label> <br>
+            <input type="text" name="firstName" id="firstName" class="space" />
+        </span>
+        <span class="error" data-error="">
+            <label for="lastName">Last Name</label> <br>
+            <input type="text" name="lastName" id="lastName" class="space" />
+        </span>
+    </div>
+
+    <div class="input-group">
+        <span class="error" data-error="">
+            <label for="mobile">Mobile</label> <br>
+            <input type="tel" name="mobile" id="mobile" pattern="[0-9\-]+" placeholder="1234-5678" class="space" />
+        </span>
+        <span class="error" data-error="">
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" id="email" class="space" />
+        </span>
+    </div>
+
+    <span class="error" data-error="">
+        <label for="street">Street</label> <br>
+        <input type="text" name="street" id="street" class="space" />
+    </span>
+
+    <div class="input-group">
+        <span class="error" data-error="">
+            <label for="city">City</label> <br>
+            <input type="text" name="city" id="city" class="space" />
+        </span>
+
+        <span class="error" data-error="">
+            <label for="country">Country</label> <br>
+            <input type="text" name="country" id="country" class="space" />
+        </span>
+    </div>
+
+    <button type="submit" id="submit-add-btn">Submit</button>
+
+</form>

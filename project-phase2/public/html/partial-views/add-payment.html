@@ -1,0 +1,28 @@
+<form class="add-form">
+    <span>
+        <label for="payment-id">Payment ID</label> <br>
+        <input id="payment-id" type="text" min="0" />
+    </span>
+
+    <span class="error" data-error="">
+        <label for="payment-mode">Payment Mode</label> <br>
+        <select name="payment-mode" id="payment-mode">
+        </select>
+    </span>
+
+    <div class="input-group">
+        <span class="error" data-error="">
+            <label for="payment-amount">Amount</label><br>
+            <input id="payment-amount" type="number" min="0" />
+        </span>
+
+        <span>
+            <label for="payment-date">Payment Date</label> <br>
+            <input disabled id="payment-date" type="date" />
+        </span>
+    </div>
+
+    <div id="cheque-details-container"></div>
+
+    <button type="button" id="submitBtn-add-payment">Submit</button>
+</form>

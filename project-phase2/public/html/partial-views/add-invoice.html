@@ -1,0 +1,31 @@
+<form class="add-form" id="add-invoice-form">
+    <h3 class="page-subheading">Add Invoice</h3>
+
+    <input type="text" name="invoiceNo" id="invoiceNo" readonly hidden>
+
+    <span class="error" data-error="">
+        <label for="amount">Amount</label> <br>
+        <input type="number" name="amount" id="amount" step="0.01">
+    </span>
+
+    <div class="input-group" id="customer-details">
+        <span class="error" data-error="">
+            <label for="customerId">Customer</label> <br>
+            <select name="customerId" id="customerId">
+            </select>
+        </span>
+    </div>
+
+    <div class="input-group" id="dates">
+        <span class="error" data-error="">
+            <label for="invoiceDate">Invoice Date</label> <br>
+            <input type="date" name="invoiceDate" id="invoiceDate">
+        </span>
+
+        <span class="error" data-error="">
+            <label for="dueDate">Due Date</label> <br>
+            <input type="date" name="dueDate" id="dueDate">
+        </span>
+    </div>
+    <button type="submit" id="submit-add-btn">Submit</button>
+</form>

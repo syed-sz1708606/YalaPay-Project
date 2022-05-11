@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+:root {
+    --black: rgb(15, 13, 13);
+    --grey-light: rgb(220, 227, 255);
+    --white-bg: rgb(247, 247, 247);
+    --blue-btn: hsl(224, 62%, 46%);
+    --green-blue: rgb(47, 209, 201);
+    --white: rgb(255, 255, 255);
+    --dark-grey-color: rgb(51, 51, 51);
+}
+
+:root, html[data-theme="light"] {
+    --font-color: var(--black);
+    --accent-color: var(--grey-light);
+    --main-bg-color: var(--white-bg);
+    --button-bg-color: var(--blue-btn);
+    --button-hover-color: var(--green-blue);
+    --action-btn-bg-color: none;
+    --action-btn-font-color: var(--black);
+    --input-bg-color: var(--white);
+    --input-font-color: var(--black);
+}
+
+:root, html[data-theme="dark"] {
+    --font-color: var(--white);
+    --accent-color: var(--dark-grey-color);
+    --main-bg-color: var(--black);
+    --button-bg-color: var(--blue-btn);
+    --button-hover-color: var(--green-blue);
+    --action-btn-bg-color: none;
+    --action-btn-font-color: var(--white);
+    --input-bg-color: var(--dark-grey-color);
+    --input-font-color: var(--white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    color: var(--font-color);
+    background-color: var(--main-bg-color);
+}
+
+#dark-mode-button {
+    margin-bottom: 1.5rem;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.yalapay-logo {
+    color: rgb(59, 73, 231);
+    margin-bottom: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    width: fit-content;
+    align-items: baseline;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+nav ul li a {
+    width: 100%;
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    text-decoration: none;
+    border-bottom: 2pt transparent solid;
+}
+
+nav ul li a:hover {
+    border-bottom: 2pt var(--button-bg-color) solid;
+    transition-duration: 1s;
+}
+
+#nav-current-page {
+    border-bottom: 2pt var(--button-bg-color) solid;
+}
+
+header {
+    margin: 1rem 0;
+}
+
+main {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.main-content {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: auto;
+}
+
+.page-subheading {
+    margin-top: 1rem;
+}
+
+button {
+    background-color: var(--button-bg-color);
+    border: none;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+    transition-duration: 0.5s;
+}
+
+.page-actions {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.page-actions button {
+    font-size: 0.9rem;
+    width: 10rem;
+    margin: 0.5rem 0;
+}
+
+.page-actions button:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    background-color: var(--accent-color);
+    border-radius: 20px 0px 0px 20px;
+    margin: 0.5rem 0;
+    width: 5rem;
+}
+
+.search-criteria {
+    width: 5rem;
+    text-align: right;
+    margin: 0.5rem 0;
+    background-color: var(--accent-color);
+    border-radius: 0px 20px 20px 0px;
+    margin-right: 0.5rem;
+}
+
+/* Input all sizes same */
+select, input {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--input-font-color);
+    background-color: var(--input-bg-color);
+    padding: 0.5rem;
+    border: 1pt var(--accent-color) solid;
+}
+
+.add-form {
+    display: grid;
+    padding: 1rem;
+}
+
+.add-form button {
+    margin-top: 1rem;
+    min-width: fit-content;
+    width: 10rem;
+}
+
+.add-form .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-form span {
+    margin-top: 1rem;
+}
+
+.add-form input, .add-form select {
+    width: 90%;
+}
+
+.action-btn {
+    font-size: 1rem;
+    background-color: var(--action-btn-bg-color);
+    color: var(--action-btn-font-color);
+}
+
+.green-days {
+    color: green;
+}
+
+.red-days {
+    color: red;
+}
+
+table {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tbody tr {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+thead {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--accent-color);
+}
+
+th {
+    padding: 0.75rem;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+input[class="error"] {
+    border: 1px solid red;
+}
+
+select[class="error"] {
+    border: 1px solid red;
+}
+
+.error[data-error]::after {
+    content: attr(data-error);
+    display: block;
+    margin: 10px 0;
+    color: red;
+}
+
+@media screen and (min-width: 600px) {
+
+    nav ul {
+        flex-direction: row;
+        width: auto;
+    }
+
+    nav ul li a {
+        width: fit-content;
+        margin-right: 3rem;
+    }
+
+    .page-actions {
+        flex-direction: row;
+        margin: 1rem 0;
+    }
+
+    .search {
+        justify-content: right;
+        margin-left: auto;
+    }
+
+    .search-criteria {
+        height: fit-content;
+    }
+
+    .add-form {
+        row-gap: 1rem;
+    }
+
+    .add-form .input-group {
+        flex-direction: row;
+    }
+
+    .add-form>span>input, .add-form>span>select {
+        width: 45%;
+    }
+
+    .add-form .input-group span {
+        width: 100%;
+    }
+
+    .add-form div[class="input-group"] span input, .add-form div[class="input-group"] select {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    th {
+        display: none;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0.5rem;
+    }
+
+    td:before {
+        content: attr(data-heading);
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
+a.left {
+    position: relative;
+}
+
+a.left:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--button-bg-color);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+}
